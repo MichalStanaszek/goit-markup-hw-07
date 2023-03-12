@@ -1,5 +1,7 @@
 @import "./components/container";
 @import "./utils/vars";
+@import "./components/grid";
+@use "./components/grid";
 
 body {
   color: get;

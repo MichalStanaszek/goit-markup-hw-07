@@ -171,13 +171,12 @@ body {
   margin-bottom: 200px;
 }
 
-.list-button {
+.filters {
   display: flex;
   justify-content: center;
   margin: 94px auto 50px;
 }
-.menu,
-button {
+.filters__button {
   font-weight: 500;
   font-size: 1.14rem;
   line-height: 1.86rem;
@@ -190,8 +189,8 @@ button {
   transition-property: transform;
 }
 
-.menu-button:hover,
-.menu-button:focus {
+.filters__button:hover,
+.filters__button:focus {
   background: var(--brand-color);
   color: #ffffff;
   font-weight: 500;
@@ -336,7 +335,7 @@ img {
 }
 
 .team__details,
-.card-description {
+.grid__details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,16 +358,17 @@ img {
 
 /* portfolio - siatka produktów */
 
-.card-layer {
+.grid__layer {
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
 
-.card-layer:hover .overlay {
+.grid__layer:hover .grid__layer--overlay {
   transform: translatex(0);
 }
 
-.overlay {
+.grid__layer--overlay {
   position: absolute;
   top: 0;
   margin: 0;
@@ -384,7 +384,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set {
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -394,31 +394,27 @@ img {
   margin-bottom: 94px;
 }
 
-.card-properties {
+.grid__item {
   max-width: 370px;
   flex-basis: calc((100% - 20px) / 3);
   border: 1px solid #eeeeee;
 }
 
-.card-properties:hover {
+.grid__item:hover {
   cursor: pointer;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-details {
-  margin: 0;
-}
-
-.title {
+.grid__details--title {
   font-weight: 700;
   font-size: 1.28rem;
   line-height: 2.57rem;
   color: #212121;
 }
 
-.title-description {
+.grid__details--description {
   font-size: 1.14rem;
   line-height: 2.14rem;
 }
