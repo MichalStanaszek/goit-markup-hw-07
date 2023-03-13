@@ -1,11 +1,6 @@
-$colors: (
-  "brand": #2196f3,
-  "fontColor": #757575,
-  "background": #2f303a,
-);
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Raleway", sans-serif;
 
-@function getColor($key) {
-  @return map-get($colors, $key);
-}
-
-$font: ("Roboto", sans-serif);
+$brand-color: #2196f3;
+$brand-text-color: #757575;
+$brand-bg-color: #2f303a;

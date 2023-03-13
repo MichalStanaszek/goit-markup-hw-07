@@ -1,0 +1,32 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-header {
+  font-weight: 700;
+  font-size: 2.57rem;
+  line-height: 3rem;
+  color: #212121;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.wrapper2 {
+  background-color: #f5f4fa;
+  height: 648px;
+  margin-top: 94px;
+  padding-top: 94px;
+}
