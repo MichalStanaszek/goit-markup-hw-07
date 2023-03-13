@@ -1,12 +1,13 @@
-.customers-header {
-  @extend .section-header;
-  margin-top: 149px;
-}
-
 .customers {
   display: flex;
   justify-content: space-between;
+
+  &__header {
+    @extend .section-header;
+    margin-top: 149px;
+  }
 }
+
 .customers__logo {
   max-width: 170px;
   max-height: 90px;
@@ -14,17 +15,17 @@
   border-radius: 4px;
   margin-bottom: 94px;
   transition-property: transform;
-}
 
-.customers__logo:hover {
-  cursor: pointer;
-  border: 1px solid $brand-color;
-  border-radius: 4px;
-  //   color: blue;
-  --color1: #{$brand-color};
-  --color2: #{$brand-color};
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1.25);
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $brand-color;
+    border-radius: 4px;
+    //   color: blue;
+    --color1: #{$brand-color};
+    --color2: #{$brand-color};
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.25);
+  }
 }
