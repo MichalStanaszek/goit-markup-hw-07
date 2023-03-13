@@ -37,27 +37,27 @@
 }
 
 .social-flex {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 32px;
-    max-height: 44px;
-  }
-  
-  .social__links {
-    padding: 11px;
-  }
-  
-  .social {
-    transition-property: transform;
-  }
-  
-  .social:hover {
-    cursor: pointer;
-    background-color: var(--brand-color);
-    border-radius: 50%;
-    --color1: #ffffff;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(1.1);
-  }
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px;
+  max-height: 44px;
+}
+
+.social__links {
+  padding: 11px;
+}
+
+.social {
+  transition-property: transform;
+}
+
+.social:hover {
+  cursor: pointer;
+  background-color: $brand-color;
+  border-radius: 50%;
+  --color1: #ffffff;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}

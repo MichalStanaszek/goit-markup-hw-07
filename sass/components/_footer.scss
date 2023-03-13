@@ -70,7 +70,7 @@
 }
 .media:hover {
   cursor: pointer;
-  background-color: var(--brand-color);
+  background-color: $brand-color;
   border-radius: 50%;
   transition-property: transform;
   transition-duration: 250ms;

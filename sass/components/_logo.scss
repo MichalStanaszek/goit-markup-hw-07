@@ -1,5 +1,5 @@
 .logo {
-  font-family: "Raleway";
+  font-family: $font-secondary;
   font-weight: 700;
   font-size: 1.85rem;
   line-height: 1.29rem;
@@ -8,7 +8,7 @@
 }
 
 .logo--color1 {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 .logo--color2 {
   color: #000000;
