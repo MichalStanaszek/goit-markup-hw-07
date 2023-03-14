@@ -4,60 +4,60 @@
   justify-content: center;
   margin: 0px;
   padding: 0;
+
+  &__member {
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    margin: 0px 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 24px;
+  }
+
+  &--name {
+    font-weight: 500;
+    font-size: 1.14rem;
+    line-height: 1.34rem;
+    color: #212121;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  &--job-description {
+    font-size: 1.14rem;
+    line-height: 18.75px;
+    text-align: center;
+  }
 }
 
-.team__member {
-  padding-bottom: 30px;
-  background-color: #ffffff;
-  margin: 0px 15px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team__details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px 24px;
-}
-
-.team--name {
-  font-weight: 500;
-  font-size: 1.14rem;
-  line-height: 1.34rem;
-  color: #212121;
-  text-align: center;
-  padding-bottom: 10px;
-}
-.team--job-description {
-  font-size: 1.14rem;
-  line-height: 18.75px;
-  text-align: center;
-}
-
-.social-flex {
+.social {
   display: flex;
   justify-content: space-between;
   margin: 0 32px;
   max-height: 44px;
+
+  &__icons {
+    padding: 11px;
+  }
 }
 
-.social__icons {
-  padding: 11px;
-}
-
-.social {
+.social--transform {
   transition-property: transform;
-}
 
-.social:hover {
-  cursor: pointer;
-  background-color: $brand-color;
-  border-radius: 50%;
-  --color1: #ffffff;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1.1);
+  &:hover {
+    cursor: pointer;
+    background-color: $brand-color;
+    border-radius: 50%;
+    --color1: #ffffff;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.1);
+  }
 }
